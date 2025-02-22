@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpClientJsonpModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-productos',
   standalone: true,
-  imports: [CommonModule,HttpClientJsonpModule],
+  imports: [CommonModule,HttpClientModule],
   templateUrl: './productos.component.html',
   styleUrl: './productos.component.css'
 })
