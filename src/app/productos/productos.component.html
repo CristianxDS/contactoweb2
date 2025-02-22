@@ -1,0 +1,22 @@
+<p class="titulo">Productos Disponibles</p>
+
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Género</th>
+            <th>Plataforma</th>
+            <th>Lanzamiento</th>
+            <th>Imagen</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let producto of pproductos" class="fila">
+            <td>{{ producto.nombre }}</td>
+            <td>{{ producto.genero }}</td>
+            <td>{{ producto.plataforma }}</td>
+            <td>{{ producto.lanzamiento }}</td>
+        <td><img class="imagen" [src]="producto.imagen" alt="{{ producto.nombre }}"></td>
+        </tr>
+    </tbody>
+</table>

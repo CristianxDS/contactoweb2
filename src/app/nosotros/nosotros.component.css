@@ -1,0 +1,12 @@
+/* Si necesitas agregar algún estilo adicional o personalizado */
+section {
+    background-color: #f7fafc;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
