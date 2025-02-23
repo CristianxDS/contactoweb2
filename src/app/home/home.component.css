@@ -1,0 +1,98 @@
+/* Estilos para la galería */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre las imágenes */
+    padding: 20px;
+    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+}
+
+/* Estilos para cada imagen */
+.gallery-item {
+    flex: 1; /* Todas las imágenes ocupan el mismo espacio inicialmente */
+    transition: flex 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Efecto al pasar el mouse sobre una imagen */
+.gallery-item:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    border-color: #333;
+}
+
+/* Estilo cuando una imagen está seleccionada */
+.gallery-item.selected {
+    flex: 5; /* La imagen seleccionada ocupa más espacio */
+    border-color: #ff6347; /* Borde resaltado */
+}
+
+/* Estilo para las imágenes no seleccionadas */
+.gallery-item:not(.selected) {
+    flex: 0.5; /* Las imágenes no seleccionadas se encogen */
+    opacity: 0.7; /* Reducimos la opacidad */
+}
+/* Contenedor principal */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
+    gap: 20px; /* Espacio entre las cartas */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+/* Estilos para cada carta */
+.card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h5 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.card button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: #2563eb;
+}
