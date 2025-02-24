@@ -1,11 +1,10 @@
 
 <br>
-<div class="gallery">
-    <!-- Usamos *ngFor para iterar sobre la lista de imágenes -->
+<div class="gallery"><
     <div *ngFor="let image of images; let i = index" 
-         class="gallery-item" 
-         [class.selected]="selectedIndex === i" 
-         (click)="selectImage(i)">
+        class="gallery-item" 
+        [class.selected]="selectedIndex === i" 
+        (click)="selectImage(i)">
         <img [src]="image" [alt]="'Imagen ' + (i + 1)">
     </div>
 </div>
@@ -15,7 +14,6 @@
 <div>
 
     <div class="grid-container">
-        <!-- Primera fila -->
         <div class="card">
             <img src="assets/image/1.jpg" alt="Product 1">
             <h5>HELL DRIVERS</h5>
@@ -35,7 +33,6 @@
             <button>Más de datelles...</button>
         </div>
     
-        <!-- Segunda fila -->
         <div class="card">
             <img src="assets/image/4.jpg" alt="Product 4">
             <h5>Product 4</h5>

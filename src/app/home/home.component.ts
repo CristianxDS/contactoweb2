@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common'; // Importa CommonModule
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  // Lista de imágenes
+
   images: string[] = [
     'assets/image/1.jpg',
     'assets/image/2.jpg',
@@ -21,10 +21,9 @@ export class HomeComponent {
     'assets/image/8.jpg'
   ];
 
-  // Índice de la imagen seleccionada
   selectedIndex: number | null = null;
 
-  // Método para seleccionar una imagen
+
   selectImage(index: number): void {
     this.selectedIndex = index;
   }

@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Espacio entre las imágenes */
+    gap: 10px; 
     padding: 20px;
-    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+    overflow: hidden;
 }
 
-/* Estilos para cada imagen */
+
 .gallery-item {
-    flex: 1; /* Todas las imágenes ocupan el mismo espacio inicialmente */
+    flex: 1;
     transition: flex 0.5s ease, transform 0.5s ease;
     cursor: pointer;
     overflow: hidden;
@@ -25,35 +25,34 @@
     display: block;
 }
 
-/* Efecto al pasar el mouse sobre una imagen */
+
 .gallery-item:hover {
-    transform: scale(1.05); /* Efecto de zoom */
+    transform: scale(1.05); 
     border-color: #333;
 }
 
-/* Estilo cuando una imagen está seleccionada */
+
 .gallery-item.selected {
-    flex: 5; /* La imagen seleccionada ocupa más espacio */
-    border-color: #ff6347; /* Borde resaltado */
+    flex: 5; 
+    border-color: #ff6347; 
 }
 
-/* Estilo para las imágenes no seleccionadas */
+
 .gallery-item:not(.selected) {
-    flex: 0.5; /* Las imágenes no seleccionadas se encogen */
-    opacity: 0.7; /* Reducimos la opacidad */
+    flex: 0.5;
+    opacity: 0.7; 
 }
-/* Contenedor principal */
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual tamaño */
-    gap: 20px; /* Espacio entre las cartas */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center; 
     padding: 20px;
-    max-width: 1200px; /* Ancho máximo del contenedor */
-    margin: 0 auto; /* Centra el contenedor en la página */
-}
+    max-width: 1200px; 
+    margin: 0 auto; 
 
-/* Estilos para cada carta */
+}
 .card {
     background-color: white;
     border: 1px solid #e0e0e0;
